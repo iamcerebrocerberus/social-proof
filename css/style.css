@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+html,
+body {
+  height: 100%;
+}
+html,
+body,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
+.main-container {
+  background: url("../assets/bg-pattern-top-desktop.svg"), url("../assets/bg-pattern-bottom-desktop.svg") #fff;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  max-width: 95.86rem;
+}
+main {
+  margin: 9rem 11rem;
+}
+.prod {
+  display: flex;
+}
+.prod-state {
+  width: 50%;
+}
+.prod-state__head {
+  width: 11ch;
+  color: #502050;
+  font-size: 3.1rem;
+  line-height: 1;
+}
+.prod-state__txt {
+  color: #937b92;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  width: 90%;
+  margin-top: 1rem;
+}
+.prod-rate {
+  width: 50%;
+}
+.prod .rate {
+  display: flex;
+  flex-direction: column;
+}
+.prod .rate li {
+  background: #f7f2f7;
+  padding: 1.4rem;
+  margin-top: 1rem;
+  width: 80%;
+}
+.prod .rate li:nth-child(2) {
+  align-self: center;
+}
+.prod .rate li:nth-child(3) {
+  align-self: flex-end;
+}
+.prod .rate__img img {
+  margin-left: 0.5rem;
+}
+.prod .rate__txt {
+  margin-left: 1.3rem;
+  color: #502050;
+  font-weight: 900;
+}
+.reviews-container {
+  display: flex;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.card {
+  background: #502050;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.card__top {
+  display: flex;
+}
+.card__top div img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.card__top div:nth-child(2) {
+  align-self: center;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.card__top div:nth-child(2) h2 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.card__top div:nth-child(2) h3 {
+  color: #ee68a4;
+  font-weight: 400;
+}
+.card p {
+  color: #fff;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
