@@ -24,112 +24,120 @@ html,body,div,span,p,h1,h2,h3,img,ul,li
 
     &::before,&::after
         box-sizing border-box
-
-body
-    display flex
-    flex-direction column
-    justify-content center
-    align-items center
-    background rgb(34, 34, 34)
-
+        
 .main-container
-    background url('../assets/bg-pattern-top-desktop.svg'),url('../assets/bg-pattern-bottom-desktop.svg') $cl-white
+    background url('../assets/bg-pattern-top-mobile.svg'),url('../assets/bg-pattern-bottom-mobile.svg') $cl-white
     background-repeat no-repeat, no-repeat
     background-position top left, bottom right
-    max-width 95.86rem
+    // background-size 100%, 100%
+    padding 4rem 1rem
 
-main
-    margin 9rem 11rem
-
-
+/*for >= 270px viewport*/
 .prod
-    display flex
     &-state
-        width 50%
+        text-align center
         &__head
-            width 11ch
             color $big-head-cl
-            font-size 3.1rem
-            line-height 1
-
+            font-size 1.5rem
+            
         &__txt
             color $prd-txt-cl
-            font-size 1rem
+            font-size .7rem
             font-weight 500
             line-height 1.7
-            width 90%
             margin-top 1rem
 
-    &-rate
-        width 50%
-        // margin-top 1rem
-        
-    .rate
+.rate
+    margin-top 1.4rem
+    li
         display flex
         flex-direction column
+        text-align center
+        background-color $star-bg-cl
+        margin-bottom .8rem
+        padding .7rem
 
-        li
-            background $star-bg-cl
-            padding 1.4rem
-            margin-top 1rem
-            width 80%
+    &__img img
+        width .89rem
+        margin-left .5rem
 
-            &:nth-child(2)
-                align-self center
-
-            &:nth-child(3)
-                align-self flex-end
-
-        &__img img
-            margin-left .5rem
-
-        &__txt
-            margin-left 1.3rem
-            color $rate-txt-cl
-            font-weight 900
-
-
-        
+    &__txt
+        font-size .7rem
+        color $rate-txt-cl
+        font-weight 700
+        margin-top .4rem
 
 .reviews-container
-    display flex
-    margin-top 4rem
-    gap 2rem
-
-
+    margin-top 2rem
+    
 .card
-    background $card-bg-cl
+    background-color $card-bg-cl
+    padding 1.2rem
+    margin-top 1rem
     border-radius .5rem
-    padding 2rem
+
     &__top
         display flex
 
         div img
-            width 2.5rem
+            width 2.3rem
             height @width
             border-radius 50%
 
         div:nth-child(2)
+            font-size .7rem
+            margin-left 1.4rem
             align-self center
-            font-size .9rem
-            margin-left 1rem
-
             h2
                 color $cl-white
                 margin-bottom .3rem
-
             h3
                 color $veri-cl
-                font-weight 400
+                font-weight 500
     
     p
+        font-size .79rem
         color $cl-white
-        margin-top 1.2rem
-        font-size .9rem
-        line-height 1.7
+        line-height 1.5
+        margin-top 1.4rem
 
-    // &:nth-child(2)
-    //     transform translateY(1.3rem)
+footer 
+    display none
 
-    // &:nth-child(3)
-    //     transform translateY(2rem)
+
+/*for >= 375px viewport styles*/
+@media screen and (min-width: 25em)
+    .main-container
+        padding 2rem 1.5rem
+
+    .prod
+        &-state
+            &__head
+                font-size 2.2rem
+                padding 2rem 2rem 0
+
+            &__txt
+                font-size .94rem
+                line-height 1.9
+
+
+    .rate
+        &__img img
+            width 1.2rem
+
+        &__txt
+            font-size .9rem
+
+    .card
+        padding 2rem
+        &__top
+            div img
+                width 3rem
+                height @width
+
+            div:nth-child(2)
+                font-size .9rem
+
+        p
+            font-size .89rem
+            line-height 1.7
