@@ -12,10 +12,11 @@ $prd-txt-cl = hsl(303, 10%, 53%)
 html,body
     height 100%
 
-html,body,div,span,p,h1,h2,h3,img,ul,li,main
+html,body,div,span,p,h1,h2,h3,img,ul,li,main,a
     margin 0
     padding 0
     list-style none
+    text-decoration none
 
 *
     font-size 100%
@@ -56,6 +57,7 @@ html,body,div,span,p,h1,h2,h3,img,ul,li,main
         background-color $star-bg-cl
         margin-bottom .8rem
         padding .7rem
+        border-radius .5rem
 
     &__img img
         width .89rem
@@ -97,6 +99,7 @@ html,body,div,span,p,h1,h2,h3,img,ul,li,main
     
     p
         font-size .79rem
+        font-weight 500
         color $cl-white
         line-height 1.5
         margin-top 1.4rem
@@ -105,10 +108,11 @@ footer
     display none
 
 
-/*for >= 375px viewport styles*/
+/*for >= 345px viewport styles*/
 @media screen and (min-width: 23.6em)
     .main-container
         padding 2rem 1.5rem
+        
 
     .prod
         &-state
@@ -132,7 +136,7 @@ footer
         padding 2rem
         &__top
             div img
-                width 3rem
+                width 2.5rem
                 height @width
 
             div:nth-child(2)
@@ -141,3 +145,96 @@ footer
         p
             font-size .89rem
             line-height 1.7
+
+
+/*for >= 1180px viewport styles*/
+@media screen and (min-width: 78.6666em)
+    body
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        background rgb(34, 34, 34)
+
+    .main-container
+        background url('../assets/bg-pattern-top-desktop.svg'),url('../assets/bg-pattern-bottom-desktop.svg') $cl-white
+        background-repeat no-repeat, no-repeat
+        background-position top left, bottom right
+        max-width: 96em
+        padding 8.7rem 11rem
+
+    .prod
+        display flex
+        &-state
+            width 50%
+            text-align left
+            &__head
+                padding 0
+                font-size 3rem
+                min-width 80%
+
+        &-rate
+            width 50%
+
+    .rate
+        display flex
+        flex-direction column
+        li
+            flex-direction row
+            padding 1rem
+            &:nth-child(1)
+                align-self flex-start
+            &:nth-child(2)
+                align-self center
+            &:nth-child(3)
+                align-self flex-end
+
+        &__txt
+            margin 0
+            align-self center
+            margin-left 1rem
+
+    
+    .reviews-container
+        display flex
+        gap 2rem
+
+    .card
+        &:nth-child(2)
+            transform translateY(1.4rem)
+        &:nth-child(3)
+            transform translateY(2.1rem)
+
+
+
+@media screen and (min-width: 89.4666em)
+    .prod
+        display flex
+        &-state
+            &__head
+                font-size 3.2rem
+                font-weight 900
+                line-height 1
+                width 50%
+            &__txt
+                font-size 1rem
+                width 86%
+                line-height 1.7
+    .rate
+        li
+            padding 1.2rem 3.5rem 1.2rem 1.2rem
+        &__txt
+            margin-left 2rem
+
+    .reviews-container
+        margin-top 3rem
+
+    .card
+        padding 2.5rem 2rem
+
+    footer 
+        display block
+        color $cl-white
+        margin-top 1rem
+        font-size .9rem
+        font-weight 100
