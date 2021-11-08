@@ -10,41 +10,43 @@ html(lang="en")
         link(rel="shortcut icon", href="assets/favicon-32x32.png", type="image/x-icon")
         title Frontendmentor | social-proof-section-master
     body 
-        .main-container 
-            main 
-                div.prod 
-                    .prod-state 
-                        h1.prod-state__head 10,000+ of our users love our products.
-                        p.prod-state__txt We only provide great products combined with excellent customers service. See what our satisfied customers are saying about our services 
-                    .prod-rate 
-                        ul.rate
-                            li <span class="rate__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="rate__txt">Rated 5 Stars in Review</span>
-                            li <span class="rate__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="rate__txt">Rated 5 Stars in Report Guru</span>
-                            li <span class="rate__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="rate__txt">Rated 5 Stars in BestTech</span>
-                .reviews-container 
+        main 
+            section.prod 
+                .prod-statement 
+                    h1.prod-statement__head 10,000+ of our users love our products. 
+                    p.prod-statement__txt We only provide great products combined with excellent customer service. See what our satisfied customer are saying about our services
+                .prod-rate 
+                    ul 
+                        li <span class="star__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="star__txt">Rated 5 Stars in Reviews</span>
+                        li <span class="star__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="star__txt">Rated 5 Stars in Report Guru</span>
+                        li <span class="star__img"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"><img src="assets/icon-star.svg" alt="star"></span><span class="star__txt">Rated 5 Stars in BestTech</span>
+            section.bottom
+                .reviews 
                     .card
-                        div.card__top
-                            div 
-                                img(src="assets/image-colton.jpg" alt="Colton Smith")
-                            div 
+                        .card-top 
+                            .card-top__img 
+                                <img src="assets/image-colton.jpg" alt="Colton Smith">
+                            .card-top__txt 
                                 h2 Colton Smith 
                                 h3 Verified Buyer
-                        p "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
+                        p.card-bot "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
                     .card
-                        div.card__top
-                            div 
-                                img(src="assets/image-irene.jpg" alt="Irene Roberts")
-                            div 
+                        .card-top 
+                            .card-top__img 
+                                <img src="assets/image-irene.jpg" alt="Irene Roberts">
+                            .card-top__txt 
                                 h2 Irene Roberts 
                                 h3 Verified Buyer
-                        p "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
+                        p.card-bot "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
                     .card
-                        div.card__top
-                            div 
-                                img(src="assets/image-anne.jpg" alt="Anne Wallace")
-                            div 
-                                h2 Anne Wallace
+                        .card-top 
+                            .card-top__img 
+                                <img src="assets/image-anne.jpg" alt="Anne Wallace">
+                            .card-top__txt 
+                                h2 Anne Wallace 
                                 h3 Verified Buyer
-                        p "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
-        footer
-            p Challeng by <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank">frontendmentor</a>. Coded by <a href="https://github.com/iamcerebrocerberus/" target="_blank">cerebro_cerberus</a>.
+                        p.card-bot "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
+        footer 
+            p challenge by <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank">frontendmentor</a>. coded by <a href="https://github.com/iamcerebrocerberus/" target="_blank">cerebro_cerberus</a>
+
+
