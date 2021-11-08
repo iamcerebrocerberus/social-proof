@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 html,
-body {
-  height: 100%;
-}
-html,
 body,
 div,
 span,
@@ -158,19 +154,33 @@ footer {
     background: url("../assets/bg-pattern-top-desktop.svg"), url("../assets/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    padding: 5rem;
   }
   main {
     max-width: 37.7333em;
   }
+  .prod-statement__head {
+    font-size: 2.3rem;
+  }
+  .prod-statement__txt {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .card p {
+    margin-top: 1rem;
+    font-size: 0.89rem;
+    color: #fff;
+    line-height: 1.4;
+  }
 }
 @media screen and (min-width: 66.666em) {
   body {
-    padding: 20rem 0 /*ultimate zoom padding -just a hack-*/;
-    height: 100vh;
+    padding: 2rem;
     flex-direction: column;
   }
   main {
